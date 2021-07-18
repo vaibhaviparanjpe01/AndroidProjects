@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CE00C194">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/classes_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardElevation="2dp"
+        app:contentPadding="10dp">
+
+
+        <RelativeLayout
+            android:id="@+id/layout_class"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/classes_card"
+            android:background="#CE00C194">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/classImageCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="0dp">
+
+
+                <ImageView
+                    android:id="@+id/imageClass"
+                    android:layout_width="93dp"
+                    android:layout_height="124dp"
+                    android:layout_below="@+id/heading"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:background="#CCCCCC"
+                    android:scaleType="fitXY" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/className"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/classImageCard"
+                android:lines="1"
+                android:text="Details of batch"
+                android:textColor="#181818"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/class_days_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/className"
+                android:layout_alignStart="@+id/className"
+                android:layout_marginTop="3dp"
+                android:lines="1"
+                android:text="Monday, Wednesday, Friday"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/classTiming1_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/class_days_text"
+                android:layout_alignStart="@+id/className"
+                android:layout_marginTop="3dp"
+                android:lines="1"
+                android:text="7:30am - 8:30 am"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/classTiming2_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/classTiming1_text"
+                android:layout_alignStart="@+id/className"
+                android:layout_marginTop="3dp"
+                android:lines="1"
+                android:text="6:30pm - 7:30 pm"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/classTiming3_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/classTiming2_text"
+                android:layout_alignStart="@+id/className"
+                android:layout_marginTop="3dp"
+                android:lines="1"
+                android:text="7:30pm - 8:30 pm"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

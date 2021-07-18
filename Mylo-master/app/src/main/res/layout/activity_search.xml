@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SearchActivity">
+
+    <RelativeLayout
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/up"
+            android:layout_width="?android:attr/actionBarSize"
+            android:layout_height="?android:attr/actionBarSize"
+            android:padding="16dp"
+            android:src="@drawable/ic_arrow_back_white_18dp" />
+
+        <EditText
+            android:id="@+id/search_bar_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/clear"
+            android:layout_toEndOf="@+id/up"
+            android:background="#00000000"
+            android:hint="Search Vendors around you"
+            android:imeOptions="actionSearch"
+            android:inputType="textCapWords"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="#FFF"
+            android:textColorHint="#99FFFFFF" />
+
+        <ImageView
+            android:id="@+id/clear"
+            android:layout_width="?android:attr/actionBarSize"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:padding="18dp"
+            android:src="@drawable/ic_cancel_grey600_48dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="?android:attr/actionBarSize"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:onClick="search"
+            android:padding="14dp"
+            android:src="@drawable/search"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_bar"
+        android:background="#e8e8e8"
+        android:visibility="gone"
+        app:tabIndicatorColor="@color/colorPrimary"
+        app:tabSelectedTextColor="@color/colorPrimaryDark"
+        app:tabTextColor="#50000000" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabs" />
+
+
+</RelativeLayout>

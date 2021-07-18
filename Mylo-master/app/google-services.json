@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "360635891178",
+    "firebase_url": "https://mylo-74eff.firebaseio.com",
+    "project_id": "mylo-74eff",
+    "storage_bucket": "mylo-74eff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:360635891178:android:0df8a45f3f96138a",
+        "android_client_info": {
+          "package_name": "com.develeno.mylo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "360635891178-hl5u45k8224hfpavbjer81k6rr4njtug.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5f022G6Fczv1GjDgVkNzAc8h3IaSbemE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

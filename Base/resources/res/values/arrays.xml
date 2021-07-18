@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="activity_000_classes">
+        <item>@string/activity_class_000_01</item>
+        <item>@string/activity_class_000_02</item>
+    </array>
+    <array name="activity_000_descriptions">
+        <item>@string/activity_description_000_01</item>
+        <item>@string/activity_description_000_02</item>
+    </array>
+    <array name="activity_000_icons_24dp">
+        <item>@drawable/ic_description_black_24dp</item>
+        <item>@drawable/ic_info_outline_black_24dp</item>
+    </array>
+    <array name="activity_000_icons_48dp">
+        <item>@drawable/ic_description_black_48dp</item>
+        <item>@drawable/ic_info_outline_black_48dp</item>
+    </array>
+    <array name="activity_000_subtitles">
+        <item>@string/activity_subtitle_000_01</item>
+        <item>@string/activity_subtitle_000_02</item>
+    </array>
+    <array name="activity_000_titles">
+        <item>@string/activity_title_000_01</item>
+        <item>@string/activity_title_000_02</item>
+    </array>
+    <array name="bytesizes">
+        <item>TB</item>
+        <item>GB</item>
+        <item>MB</item>
+        <item>KB</item>
+        <item>bytes</item>
+    </array>
+    <array name="default_play_mode">
+        <item>Stream from network</item>
+        <item>Download and play</item>
+    </array>
+    <array name="hidden_activity_classes">
+        <item>${hidden.activities}</item>
+    </array>
+</resources>

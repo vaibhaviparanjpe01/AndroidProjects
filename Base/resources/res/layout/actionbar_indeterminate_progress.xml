@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:paddingLeft="4dp" android:paddingRight="4dp" android:focusable="true" android:addStatesFromChildren="true" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?attr/actionButtonStyle">
+    <ProgressBar android:focusable="true" android:layout_width="24dp" android:layout_height="24dp" style="?android:attr/indeterminateProgressStyle"/>
+</LinearLayout>

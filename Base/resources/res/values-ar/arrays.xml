@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="bytesizes">
+        <item>تيرا بايت</item>
+        <item>جيجابايت</item>
+        <item>ميجابايت</item>
+        <item>كيلوبايت</item>
+        <item>بايت</item>
+    </array>
+    <array name="default_play_mode">
+        <item>تيار الشبكة</item>
+        <item>التحميل والتشغيل</item>
+    </array>
+</resources>

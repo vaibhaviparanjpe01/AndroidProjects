@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.TransluscentStatusBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+    </style>
+
+    <style name="ApiAi.Microphone.Custom">
+        <item name="mainColor">#000000</item>
+        <item name="maxRadius">@dimen/mic_button_halo_radius_max</item>
+        <item name="minRadius">@dimen/mic_button_halo_radius_min</item>
+        <item name="centerColor">@color/colorPrimary</item>
+        <item name="haloColor">@color/mic_button_halo</item>
+        <item name="android:src">@drawable/mic_control</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:layout_width">@dimen/mic_button_size</item>
+        <item name="android:layout_height">@dimen/mic_button_size</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="RatingBar">
+        <item name="colorControlNormal">#25000000</item>
+        <item name="colorControlActivated">#FFA500</item>
+    </style>
+
+</resources>

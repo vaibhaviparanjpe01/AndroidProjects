@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="bytesizes">
+        <item>टीबी</item>
+        <item>जीबी</item>
+        <item>एमबी</item>
+        <item>केबी</item>
+        <item>बाइट्स</item>
+    </array>
+    <array name="default_play_mode">
+        <item>नेटवर्क से स्ट्रीम करें</item>
+        <item>डाउनलोड करें और चलाएं</item>
+    </array>
+</resources>

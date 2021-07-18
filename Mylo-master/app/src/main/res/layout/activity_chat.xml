@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/MyToolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="2dp"
+        android:visibility="gone"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+    <RelativeLayout
+        android:id="@+id/MyToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="#FFF"
+        android:elevation="0dp"
+        android:orientation="horizontal"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:visibility="visible"
+        app:layout_scrollFlags="scroll|enterAlways">
+
+        <ImageView
+            android:id="@+id/ham"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:clickable="true"
+            android:onClick="backtoMain"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_arrow_back_black_48dp"
+            android:tint="@color/colorPrimary" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ham"
+            android:src="@drawable/logo_mylo" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view"
+        android:layout_below="@+id/MyToolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFF"
+            android:orientation="vertical">
+
+
+            <com.stfalcon.chatkit.messages.MessagesList
+                android:id="@+id/messagesList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:incomingDefaultBubbleColor="@color/colorPrimary"
+                app:incomingTextColor="#FFF"
+                app:incomingTimeTextColor="#99FFFFFF"
+                app:outcomingDefaultBubbleColor="#eeeeee"
+                app:outcomingTextColor="#000"
+                app:outcomingTimeTextColor="#99000000" />
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/input_layout"
+        android:background="#25000000" />
+
+    <LinearLayout
+        android:id="@+id/input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <com.develeno.mylo.others.AIButton
+            android:id="@+id/micButton"
+            style="@style/ApiAi.Microphone.Custom"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:padding="16dp" />
+
+        <com.stfalcon.chatkit.messages.MessageInput
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:inputHint="Write your message here" />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="bytesizes">
+        <item>TB</item>
+        <item>GB</item>
+        <item>MB</item>
+        <item>KB</item>
+        <item>bytes</item>
+    </array>
+    <array name="default_play_mode">
+        <item>네트워크에서 스트리밍</item>
+        <item>다운로드 및 재생</item>
+    </array>
+</resources>

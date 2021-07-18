@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="bytesizes">
+        <item>TB</item>
+        <item>GB</item>
+        <item>MB</item>
+        <item>KB</item>
+        <item>バイト数</item>
+    </array>
+    <array name="default_play_mode">
+        <item>ネットワークからのストリーム</item>
+        <item>ダウンロードして再生</item>
+    </array>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="bytesizes">
+        <item>To</item>
+        <item>Go</item>
+        <item>Mo</item>
+        <item>Ko</item>
+        <item>octets</item>
+    </array>
+    <array name="default_play_mode">
+        <item>Transmission à partir du réseau</item>
+        <item>Télécharger et jouer</item>
+    </array>
+</resources>

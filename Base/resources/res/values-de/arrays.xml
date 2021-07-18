@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="bytesizes">
+        <item>TB</item>
+        <item>GB</item>
+        <item>MB</item>
+        <item>KB</item>
+        <item>Byte</item>
+    </array>
+    <array name="default_play_mode">
+        <item>Streamen aus dem Netzwerk</item>
+        <item>Herunterladen und abspielen</item>
+    </array>
+</resources>

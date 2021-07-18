@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="bytesizes">
+        <item>เทราไบต์</item>
+        <item>กิกกะไบต์</item>
+        <item>เมกะไบต์</item>
+        <item>กิโลไบต์</item>
+        <item>ไบต์</item>
+    </array>
+    <array name="default_play_mode">
+        <item>สตรีมจากเครือข่าย</item>
+        <item>ดาวน์โหลดและเล่น</item>
+    </array>
+</resources>

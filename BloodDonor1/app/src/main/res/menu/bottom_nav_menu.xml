@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/registration"
+        android:checkable="false"
+        android:enabled="true"
+        android:icon="@mipmap/registration"
+        android:title="Registration"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/search"
+        android:enabled="true"
+        android:icon="@mipmap/search"
+        android:title="Search"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/exit"
+        android:enabled="true"
+        android:icon="@mipmap/finish"
+        android:title="Exit"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+</menu>

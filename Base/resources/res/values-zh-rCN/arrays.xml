@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="bytesizes">
+        <item>TB</item>
+        <item>GB</item>
+        <item>MB</item>
+        <item>KB</item>
+        <item>字节</item>
+    </array>
+    <array name="default_play_mode">
+        <item>来自网络的流</item>
+        <item>下载并播放</item>
+    </array>
+</resources>

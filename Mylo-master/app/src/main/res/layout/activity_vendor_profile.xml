@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFF"
+                android:fitsSystemWindows="true"
+                app:contentScrim="@color/colorPrimary"
+                app:expandedTitleMarginEnd="64dp"
+                app:expandedTitleMarginStart="48dp"
+                app:expandedTitleTextAppearance="@android:color/transparent"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:background="#FFF"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/vendor" />
+
+                    <LinearLayout
+                        android:id="@+id/indicator"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center"
+                        android:orientation="horizontal" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="16dp"
+                        android:paddingRight="16dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/right_layout"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2nd Home Cafe"
+                                android:textColor="#000"
+                                android:textSize="28sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/sublabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Hukka Lounge and Snacks"
+                                android:textColor="#75000000"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/timming"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="Time : 10:00am – 11:00pm"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/cuisines"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="Cuisines: "
+                                android:textColor="#75000000"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/right_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/buy1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/layout_bg"
+                                android:clickable="true"
+                                android:onClick="collapse"
+                                android:text="@string/claim_deal"
+                                android:textColor="#FFF" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:id="@+id/menu"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingTop="32dp"
+                            android:paddingBottom="32dp">
+
+                            <ImageView
+                                android:layout_width="28dp"
+                                android:layout_height="28dp"
+                                android:src="@drawable/list" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:gravity="center"
+                                android:text="View Menu"
+                                android:textColor="#000" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/cost"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingTop="32dp"
+                            android:paddingBottom="32dp">
+
+                            <ImageView
+                                android:layout_width="28dp"
+                                android:layout_height="28dp"
+                                android:src="@drawable/person" />
+
+                            <TextView
+                                android:id="@+id/costForTwo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:gravity="center"
+                                android:text="Rs. 500 for one"
+                                android:textColor="#000" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/veg"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingTop="32dp"
+                            android:paddingBottom="32dp">
+
+                            <ImageView
+                                android:id="@+id/veg_icon"
+                                android:layout_width="28dp"
+                                android:layout_height="28dp"
+                                android:src="@drawable/non_veg" />
+
+                            <TextView
+                                android:id="@+id/vegText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:gravity="center"
+                                android:text="Non-veg"
+                                android:textColor="#000" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingBottom="16dp"
+                        android:text="This small yet spacious cafe is situated in the heart of the city where you can have your favourite hukka and chinese snacks and some delicious shakes. 2nd home cafe near Shaheed Smarak in jabalpur is a place were you can organise your get together or just take out time from your busy schedule to relax, that too in the mid of the city."
+                        android:textColor="#99000000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/MyToolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?android:attr/actionBarSize"
+                    android:elevation="0dp"
+                    app:layout_collapseMode="pin"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/app_bar_layout"
+            android:background="#FFF"
+            android:clipToPadding="false"
+            android:fillViewport="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/rating_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/avg_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.2"
+                        android:textColor="#000"
+                        android:textSize="68sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/num_reviews"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(40 Reviews)"
+                        android:textColor="#75000000"
+                        android:textSize="16sp"
+                        android:visibility="visible" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        style="?android:attr/ratingBarStyleIndicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:max="5"
+                        android:rating="4.2"
+                        android:theme="@style/RatingBar" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/services_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="16dp"
+                    android:text="Services Offered"
+                    android:textColor="#000"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/services_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp">
+
+                    <TextView
+                        android:id="@+id/services_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingBottom="16dp"
+                        android:text=""
+                        android:textColor="#99000000"
+                        android:textSize="14sp" />
+
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:id="@+id/deals_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="16dp"
+                    android:text="Deals Available"
+                    android:textColor="#000"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:id="@+id/openDeal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/round_btn_green"
+                    android:clickable="true"
+                    android:onClick="openDeal"
+                    android:text="Book Now"
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+
+
+                <RelativeLayout
+                    android:id="@+id/review_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp">
+
+                    <TextView
+                        android:id="@+id/review_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="16dp"
+                        android:text="Reviews"
+                        android:textColor="#000"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/review_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:clickable="true"
+                            android:onClick="showAllReviews"
+                            android:src="@drawable/ic_expand_more_white_18dp"
+                            android:tint="@color/colorPrimary" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:id="@+id/addReview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/round_btn_green"
+                    android:clickable="true"
+                    android:onClick="addReview"
+                    android:text="Write a review"
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="16dp"
+                    android:text="Address"
+                    android:textColor="#000"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="16dp"
+                    android:text="17, Ahinsa Chowk, Next to Shalby Hospital, Vijay Nagar Jabalpur, Madhya Pradesh"
+                    android:textColor="#99000000"
+                    android:textSize="14sp" />
+
+                <!--  <com.alirezaashrafi.library.GoogleMapView
+                      android:id="@+id/googleMapView"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_marginBottom="16dp"
+                      android:clickable="true"
+                      android:onClick="directions"
+                      app:setLatitude="23.180902"
+                      app:setLongitude="79.909727"
+                      app:setMapHeight="350"
+                      android:visibility="gone"
+                      app:setMapScale="high"
+                      app:setMapType="roadmap"
+                      app:setMapWidth="500"
+                      app:setMapZoom="17" />-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="directions"
+                    android:padding="16dp"
+                    android:text="Directions"
+                    android:textColor="#FFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

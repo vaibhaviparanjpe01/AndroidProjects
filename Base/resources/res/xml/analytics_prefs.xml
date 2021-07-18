@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <android.support.v7.preference.PreferenceCategory android:title="@string/analytics_prefs_usage_data_category" android:key="ANALYTICS_SETTINGS">
+        <android.support.v7.preference.CheckBoxPreference android:title="@string/analytics_prefs_enable_analytics_title" android:key="enable_analytics" android:defaultValue="true" android:summaryOn="@string/analytics_prefs_enable_analytics_summary_on" android:summaryOff="@string/analytics_prefs_enable_analytics_summary_off"/>
+    </android.support.v7.preference.PreferenceCategory>
+</android.support.v7.preference.PreferenceScreen>

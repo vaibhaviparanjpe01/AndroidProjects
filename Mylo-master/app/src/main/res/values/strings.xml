@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Mylo</string>
+    <array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </array>
+
+    <string name="facebook_app_id">1261617820602102</string>
+    <string name="fb_login_protocol_scheme">fb1261617820602102</string>
+
+    <string name="sampleText">Bill should be above ₹300 to avail 10% off.\n\nValid for dine-in only. 1 voucher per bill.\n\nThis offer cannot be clubbed with other existing promotions.\n\nReservation is recommended so that you don’t have to wait.\n\nTo redeem the discount, the customer has to show the unique code at the time of ordering.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="claim_deal">Book Now</string>
+
+    <string name="just_now">Right now</string>
+    <string name="a_min_ago">1 minute ago</string>
+    <string name="mins_ago">" minutes ago"</string>
+    <string name="a_hour_ago">1 hour ago</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="days_ago">" days ago"</string>
+    <string name="week_ago">" week ago"</string>
+    <string name="weeks_ago">" weeks ago"</string>
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+</resources>

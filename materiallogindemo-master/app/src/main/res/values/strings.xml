@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Dr.Chatbot</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="welcome_to_dr_chatbot_your_personal_health_assistant_in_your_hands">Welcome to Dr.Chatbot,your personal health assistant in your hands</string>
+    <string name="search_for_your_medical_symptoms_here">Search for your medical symptoms here</string>
+    <string name="logout">LogOut</string>
+    <string name="password">Password</string>
+    <string name="e_mail">E-Mail</string>
+    <string name="not_an_existing_user_register">Not an existing user ! Register</string>
+    <string name="login">LOGIN</string>
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <com.pkmmte.view.CircularImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/no_pic"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rating="4"
+            android:theme="@style/RatingBar" />
+
+        <TextView
+            android:id="@+id/review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Review"
+            android:textColor="#75000000"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

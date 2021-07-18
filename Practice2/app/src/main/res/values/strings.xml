@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Practice</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="title_activity_home_page">ScrollingActivity</string>
+    <string name="action_settings">Settings</string>
+
+
+</resources>

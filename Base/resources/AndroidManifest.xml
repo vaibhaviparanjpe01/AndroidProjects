@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1002" android:versionName="1.0" android:installLocation="auto" android:compileSdkVersion="29" android:compileSdkVersionCodename="10" package="com.newandromo.dev849565.app936843" platformBuildVersionCode="1002" platformBuildVersionName="1">
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="29"/>
+    <supports-screens android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher_icon" android:name="com.newandromo.dev849565.app936843.AndromoApplication" android:allowBackup="true" android:hardwareAccelerated="true" android:supportsRtl="true" android:usesCleartextTraffic="true" android:requestLegacyExternalStorage="true">
+        <meta-data android:name="android.webkit.WebView.EnableSafeBrowsing" android:value="true"/>
+        <activity android:theme="@style/DashboardTheme_000" android:label="@string/app_name" android:name="com.newandromo.dev849565.app936843.Dashboard_000" android:screenOrientation="unspecified">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/ActivityTheme_Custompage_1601126045_8a479573a2" android:label="@string/app_name" android:name="com.newandromo.dev849565.app936843.Custompage_1601126045_8a479573a2" android:screenOrientation="unspecified" android:parentActivityName="com.newandromo.dev849565.app936843.Dashboard_000">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.newandromo.dev849565.app936843.Dashboard_000"/>
+        </activity>
+        <activity android:theme="@style/ActivityTheme_About_1601128430_b794eb9e4a" android:label="@string/app_name" android:name="com.newandromo.dev849565.app936843.About_1601128430_b794eb9e4a" android:screenOrientation="unspecified" android:parentActivityName="com.newandromo.dev849565.app936843.Dashboard_000">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.newandromo.dev849565.app936843.Dashboard_000"/>
+        </activity>
+        <activity android:theme="@style/AppTheme" android:name="com.newandromo.dev849565.app936843.AndromoAboutActivity"/>
+        <meta-data android:name="com.newandromo.dev849565.app936843.GlideConfiguration" android:value="GlideModule"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+    </application>
+</manifest>

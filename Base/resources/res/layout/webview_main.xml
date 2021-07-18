@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/drawer_layout" android:tag="layout/webview_main_0" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.constraint.ConstraintLayout android:fitsSystemWindows="?attr/content_fits_system_windows" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/background_image" android:layout_width="0dp" android:layout_height="0dp" android:scaleType="centerCrop" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <android.support.design.widget.CoordinatorLayout android:theme="?attr/content_theme" android:id="@+id/main_content" android:tag="binding_1" android:fitsSystemWindows="?attr/content_fits_system_windows" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/music_controls" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+            <ViewStub android:id="@+id/app_bar" android:layout="?attr/app_bar_layout" android:layout_width="?attr/app_bar_width" android:layout_height="?attr/app_bar_height"/>
+            <include layout="@layout/webview_content"/>
+        </android.support.design.widget.CoordinatorLayout>
+        <ViewStub android:id="@+id/music_controls" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@+id/bannerDivider" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0"/>
+        <android.support.v4.widget.Space android:id="@+id/bannerScrimStart" android:layout_width="0dp" android:layout_height="128dp" app:layout_constraintBottom_toTopOf="@+id/bannerDivider" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0"/>
+        <View android:id="@+id/bannerScrim" android:visibility="gone" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="@+id/bannerScrimStart"/>
+        <View android:id="@+id/bannerDivider" android:background="?android:attr/dividerHorizontal" android:visibility="gone" android:layout_width="0dp" android:layout_height="1dp" app:layout_constraintBottom_toTopOf="@+id/bannerAdStaticContainer" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0"/>
+        <FrameLayout android:orientation="vertical" android:id="@+id/bannerAdStaticContainer" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0">
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/contentAdLayout" android:layout_width="match_parent" android:layout_height="@dimen/default_banner_container_height"/>
+        </FrameLayout>
+    </android.support.constraint.ConstraintLayout>
+    <include layout="@layout/drawer"/>
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme">
+    </style>
+    <style name="AppTheme.V19">
+    </style>
+    <style name="DarkTheme">
+    </style>
+    <style name="DarkTheme.V19">
+    </style>
+    <style name="LightTheme">
+    </style>
+    <style name="LightTheme.V19">
+    </style>
+</resources>
